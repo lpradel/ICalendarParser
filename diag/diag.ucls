@@ -1,0 +1,227 @@
+<class-diagram version="0.9.86" automaticImage="PNG" icons="true" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <class corner="BOTTOM_RIGHT" language="java" name="Main" project="rvs_ub_10" file="/rvs_ub_10/src/Main.java" 
+    binary="false">    
+    <position x="413" y="100" width="-1" height="-1"/>    
+    <display autosize="true" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="URLReader" project="rvs_ub_10" file="/rvs_ub_10/src/URLReader.java" 
+    binary="false">    
+    <position x="77" y="291" width="-1" height="-1"/>    
+    <display autosize="true" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="ICalendarPrinter" project="rvs_ub_10" 
+    file="/rvs_ub_10/src/ICalendarPrinter.java" binary="false">    
+    <position x="772" y="314" width="-1" height="-1"/>    
+    <display autosize="true" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="ICalendarParser" project="rvs_ub_10" 
+    file="/rvs_ub_10/src/ICalendarParser.java" binary="false">    
+    <position x="303" y="354" width="-1" height="-1"/>    
+    <display autosize="true" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="ICalendarObject" project="rvs_ub_10" 
+    file="/rvs_ub_10/src/ICalendarObject.java" binary="false">    
+    <position x="545" y="557" width="-1" height="-1"/>    
+    <display autosize="true" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="ICalendarComponent" project="rvs_ub_10" 
+    file="/rvs_ub_10/src/ICalendarComponent.java" binary="false">    
+    <position x="731" y="756" width="-1" height="-1"/>    
+    <display autosize="true" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="ICalendarProperty" project="rvs_ub_10" 
+    file="/rvs_ub_10/src/ICalendarProperty.java" binary="false">    
+    <position x="307" y="757" width="-1" height="-1"/>    
+    <display autosize="true" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="ICalendarComponentProperty" project="rvs_ub_10" 
+    file="/rvs_ub_10/src/ICalendarComponentProperty.java" binary="false">    
+    <position x="301" y="994" width="-1" height="-1"/>    
+    <display autosize="true" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="ICalendarPropertyParameter" project="rvs_ub_10" 
+    file="/rvs_ub_10/src/ICalendarPropertyParameter.java" binary="false">    
+    <position x="666" y="1001" width="-1" height="-1"/>    
+    <display autosize="true" package="false" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <association>    
+    <bendpoint x="262" y="626"/>    
+    <source project="rvs_ub_10" name="ICalendarParser" file="/rvs_ub_10/src/ICalendarParser.java" binary="false" 
+      navigable="false">      
+      <attribute name="comp"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="rvs_ub_10" name="ICalendarComponent" file="/rvs_ub_10/src/ICalendarComponent.java" binary="false" 
+      navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="rvs_ub_10" name="ICalendarObject" file="/rvs_ub_10/src/ICalendarObject.java" binary="false" 
+      navigable="false">      
+      <attribute name="properties"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="rvs_ub_10" name="ICalendarProperty" file="/rvs_ub_10/src/ICalendarProperty.java" binary="false" 
+      navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="rvs_ub_10" name="ICalendarPrinter" file="/rvs_ub_10/src/ICalendarPrinter.java" binary="false" 
+      navigable="false">      
+      <attribute name="calendar"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="rvs_ub_10" name="ICalendarObject" file="/rvs_ub_10/src/ICalendarObject.java" binary="false" 
+      navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="rvs_ub_10" name="ICalendarObject" file="/rvs_ub_10/src/ICalendarObject.java" binary="false" 
+      navigable="false">      
+      <attribute name="components"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="rvs_ub_10" name="ICalendarComponent" file="/rvs_ub_10/src/ICalendarComponent.java" binary="false" 
+      navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <dependency>    
+    <bendpoint x="944" y="745"/>    
+    <source project="rvs_ub_10" name="ICalendarPrinter" file="/rvs_ub_10/src/ICalendarPrinter.java" binary="false"/>    
+    <target project="rvs_ub_10" name="ICalendarPropertyParameter" file="/rvs_ub_10/src/ICalendarPropertyParameter.java" 
+      binary="false"/>  
+  </dependency>  
+  <association>    
+    <source project="rvs_ub_10" name="Main" file="/rvs_ub_10/src/Main.java" binary="false" navigable="false">      
+      <attribute name="ICalendar"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="rvs_ub_10" name="ICalendarObject" file="/rvs_ub_10/src/ICalendarObject.java" binary="false" 
+      navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="rvs_ub_10" name="ICalendarProperty" file="/rvs_ub_10/src/ICalendarProperty.java" binary="false" 
+      navigable="false">      
+      <attribute name="params"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="rvs_ub_10" name="ICalendarPropertyParameter" file="/rvs_ub_10/src/ICalendarPropertyParameter.java" 
+      binary="false" navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <dependency>    
+    <bendpoint x="378" y="507"/>    
+    <source project="rvs_ub_10" name="ICalendarPrinter" file="/rvs_ub_10/src/ICalendarPrinter.java" binary="false"/>    
+    <target project="rvs_ub_10" name="ICalendarProperty" file="/rvs_ub_10/src/ICalendarProperty.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <bendpoint x="55" y="735"/>    
+    <source project="rvs_ub_10" name="ICalendarParser" file="/rvs_ub_10/src/ICalendarParser.java" binary="false"/>    
+    <target project="rvs_ub_10" name="ICalendarComponentProperty" file="/rvs_ub_10/src/ICalendarComponentProperty.java" 
+      binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <bendpoint x="890" y="627"/>    
+    <source project="rvs_ub_10" name="ICalendarPrinter" file="/rvs_ub_10/src/ICalendarPrinter.java" binary="false"/>    
+    <target project="rvs_ub_10" name="ICalendarComponent" file="/rvs_ub_10/src/ICalendarComponent.java" binary="false"/>  
+  </dependency>  
+  <association>    
+    <source project="rvs_ub_10" name="ICalendarParser" file="/rvs_ub_10/src/ICalendarParser.java" binary="false" 
+      navigable="false">      
+      <attribute name="cal"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="rvs_ub_10" name="ICalendarObject" file="/rvs_ub_10/src/ICalendarObject.java" binary="false" 
+      navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <dependency>    
+    <bendpoint x="440" y="861"/>    
+    <source project="rvs_ub_10" name="ICalendarPrinter" file="/rvs_ub_10/src/ICalendarPrinter.java" binary="false"/>    
+    <target project="rvs_ub_10" name="ICalendarComponentProperty" file="/rvs_ub_10/src/ICalendarComponentProperty.java" 
+      binary="false"/>  
+  </dependency>  
+  <generalization>    
+    <source project="rvs_ub_10" name="ICalendarComponentProperty" file="/rvs_ub_10/src/ICalendarComponentProperty.java" 
+      binary="false"/>    
+    <target project="rvs_ub_10" name="ICalendarProperty" file="/rvs_ub_10/src/ICalendarProperty.java" binary="false"/>  
+  </generalization>  
+  <dependency>    
+    <source project="rvs_ub_10" name="ICalendarParser" file="/rvs_ub_10/src/ICalendarParser.java" binary="false"/>    
+    <target project="rvs_ub_10" name="ICalendarProperty" file="/rvs_ub_10/src/ICalendarProperty.java" binary="false"/>  
+  </dependency>  
+  <dependency>    
+    <source project="rvs_ub_10" name="ICalendarComponent" file="/rvs_ub_10/src/ICalendarComponent.java" binary="false"/>    
+    <target project="rvs_ub_10" name="ICalendarProperty" file="/rvs_ub_10/src/ICalendarProperty.java" binary="false"/>  
+  </dependency>  
+  <association>    
+    <source project="rvs_ub_10" name="Main" file="/rvs_ub_10/src/Main.java" binary="false" navigable="false">      
+      <attribute name="ICalPrinter"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="rvs_ub_10" name="ICalendarPrinter" file="/rvs_ub_10/src/ICalendarPrinter.java" binary="false" 
+      navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="rvs_ub_10" name="Main" file="/rvs_ub_10/src/Main.java" binary="false" navigable="false">      
+      <attribute name="UrlReader"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="rvs_ub_10" name="URLReader" file="/rvs_ub_10/src/URLReader.java" binary="false" navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="rvs_ub_10" name="Main" file="/rvs_ub_10/src/Main.java" binary="false" navigable="false">      
+      <attribute name="ICalParser"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="rvs_ub_10" name="ICalendarParser" file="/rvs_ub_10/src/ICalendarParser.java" binary="false" 
+      navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="rvs_ub_10" name="ICalendarComponent" file="/rvs_ub_10/src/ICalendarComponent.java" binary="false" 
+      navigable="false">      
+      <attribute name="properties"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="rvs_ub_10" name="ICalendarComponentProperty" file="/rvs_ub_10/src/ICalendarComponentProperty.java" 
+      binary="false" navigable="true"/>    
+    <display labels="false" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" package="false" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="false" multiplicity="true"/>
+</class-diagram>
